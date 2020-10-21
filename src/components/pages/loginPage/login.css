@@ -1,0 +1,9 @@
+.login-container{
+    display: flex;
+    height: 500px;
+    width: 600px;
+    align-items: center;
+    background-color: mediumpurple;
+
+}
+
