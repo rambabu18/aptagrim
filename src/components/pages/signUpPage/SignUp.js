@@ -1,19 +1,22 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react'
 import { Button } from '../../button/Button'
-import Modal from '../../modal/Modal';
-import './login.css'
+import './sign.css'
 
 
-export default function LoginPage({buttonRef, showModal}) {
+export default function SignUpPage() {
 
-  const{show, setShow} = useState(false);
-    
+    const submitHandler =()=>{
+        alert("Button is clicked")
+    }
     return (
-            <div className='login-container' >
+            <div className='sign-container' >
                 
-                    <form>
-                      <ul className='form-container' >
+                    <form onSubmit={submitHandler} >
+                      <ul className='sign-form-container' >
+                      <li>
+                          <label htmlFor="text" >Name</label>
+                        <input type='text' id='name' placeholder='Enter your Name' name='name' />
+                          </li>
                          <li>
                           <label htmlFor="email" >Email</label>
                         <input type='email' id='email' placeholder='Enter your Email' name='email' />
@@ -26,22 +29,13 @@ export default function LoginPage({buttonRef, showModal}) {
                         <Button 
                          buttonStyle='btn--outline'
                          buttonSize='btn--medium' 
-                          > Login</Button>
-                        </li>
-                        <li>
-                        <Link onClick={()=>setShow(true)} 
-                         className='button secondary text-center' >SignUp</Link>
+                         type='submit'> SignUp</Button>
                         </li>
                         </ul> 
                     </form>
-             {
-               show ? (<Modal show={show} />) : null
-             }
-                    
+                
 
-            </div> 
+            </div>
+        
     )
 }
-
-
-

@@ -1,0 +1,126 @@
+
+.modal-wrapper{
+  background-color: darkgray;
+  width: 100vh;
+  height: 70vh;
+  margin: -24rem ;
+   
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal-header{
+background: #2c2c2c;
+color: #e9e9e9;
+padding: 1rem;
+justify-content: space-between;
+}
+
+.modal-header span{
+    font-size: 1.4rem;
+    cursor: pointer;
+    padding: 44rem;
+}
+
+.modal-content-email{
+    display: flex;
+    place-content: center;
+    padding: 2rem ;
+    justify-content: space-between;
+    margin-left: 14rem;
+    margin-right: 14rem;
+    align-items: baseline;
+    font-style: italic;
+}
+.modal-btn{
+    padding: 1rem;
+    margin-left: 18rem;
+}
+
+
+
+.modal-content{
+    display: flex;
+     margin: 5rem;
+    place-content: center;
+    margin-left: 8rem;
+}
+
+.modal-body{
+    font-size: 1.5rem;
+
+}
+
+.modal-body p{
+    font-size: 1.5rem;
+    color: gold;
+  margin-top: -2rem;
+    margin-left: 5rem;
+    padding: .5rem;
+}
+
+.modal-button{
+    margin: 1rem;
+    padding: .5rem;
+    
+    
+}
+
+.btnn--clear{
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    padding: .5rem 2rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-right: 1rem;
+    outline: none;
+    margin-left: 3rem;
+}
+
+.btnn--clear:hover{
+   border: 0.2rem dimgray solid;
+}
+
+.btnn--verify:hover{
+    border: 0.2rem dimgrey solid;
+ }
+
+.btnn--verify{
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    padding: .5rem 1.8rem;
+    font-size: 1rem;
+    margin-left: 1rem;
+    font-weight: bolder;
+}
+
+.btn--verify{
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    padding: .5rem 1.8rem;
+    font-size: 1rem;
+    margin-left: 1rem;
+    font-weight: bolder;
+}
+.btn--clear{
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    padding: .5rem 1.8rem;
+    font-size: 1rem;
+    margin-left: -1rem;
+    font-weight: bolder;
+}
+
+.btn--clear:hover{
+    border: 0.2rem dimgray solid;
+ }
+ 
+ .btn--verify:hover{
+     border: 0.2rem dimgrey solid;
+  }
