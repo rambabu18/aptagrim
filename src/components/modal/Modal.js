@@ -2,14 +2,16 @@ import React from 'react'
 import Otp from '../otp /Otp'
 import './modal.css'
 
-export default function Modal() {
+ function Modal({onSubmit,closeHandle}) {
+
+    
     
     return (
-            
+            <form onSubmit={onSubmit} >
         <div className='modal-wrapper' >
             <div className='modal-header' >
                 <p>Enter Your Email and generate OTP</p>
-                <span className='modal-close-btn' > x</span>
+                <span onClick={closeHandle} className='modal-close-btn' > x</span>
             </div>
             <div className='modal-content-email'  >
                 <label htmlFor='email'>Email</label>
@@ -30,13 +32,16 @@ export default function Modal() {
                     <p>Enter OTP Here</p>
                     <Otp/>
                     <div className='modal-button'>
-                    <button className='btnn--clear' >Clear</button>
+                    <button className='btnn--clear'  >Clear</button>
                     <button className='btnn--verify' >Verify</button>
                     </div>
                     
                 </div>
             </div>
         </div>
+        </form>
        
     )
 }
+
+export default Modal

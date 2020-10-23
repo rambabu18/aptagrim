@@ -5,9 +5,11 @@ import Modal from '../../modal/Modal';
 import './login.css'
 
 
-export default function LoginPage({buttonRef, showModal}) {
+export default function LoginPage() {
 
-  const{show, setShow} = useState(false);
+  const[show, setShow] = useState(false)
+
+      const closeModal =() => setShow(false)
     
     return (
             <div className='login-container' >
@@ -29,16 +31,17 @@ export default function LoginPage({buttonRef, showModal}) {
                           > Login</Button>
                         </li>
                         <li>
-                        <Link onClick={()=>setShow(true)} 
-                         className='button secondary text-center' >SignUp</Link>
-                        </li>
+                        <Link  className='button secondary text-center'
+                           onClick={()=>setShow(true)} 
+                            >
+                            SignUp 
+                         </Link>  
+                      </li>
                         </ul> 
                     </form>
-             {
-               show ? (<Modal show={show} />) : null
-             }
-                    
-
+                    { show ?
+                    <Modal show={show} closeModal={closeModal}  /> : null
+                    }
             </div> 
     )
 }
