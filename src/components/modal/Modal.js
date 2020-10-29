@@ -8,7 +8,7 @@ import './modal.css'
     
     return (
             <form onSubmit={onSubmit} >
-        <div className='modal-wrapper' >
+           <div className='modal-wrapper' >
             <div className='modal-header' >
                 <p>Enter Your Email and generate OTP</p>
                 <span onClick={closeHandle} className='modal-close-btn' > x</span>
@@ -37,6 +37,7 @@ import './modal.css'
                     </div>
                     
                 </div>
+               
             </div>
         </div>
         </form>

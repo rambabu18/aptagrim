@@ -11,6 +11,7 @@ import LoginPage from './components/pages/loginPage/LoginPage';
 import Services from './components/pages/Services/Services';
 import Products from './components/products/Products';
 import SignUpPage from './components/pages/signUpPage/SignUp';
+import DashBoard from './components/pages/dashboard/DashBoard';
 
 
 
@@ -26,6 +27,7 @@ export default  function App() {
         <Route path='/contact' component={Products} />
         <Route path='/login'  component={LoginPage} />
         <Route path='/signup' component={SignUpPage} />
+        <Route path='/dashboard' component={DashBoard} />
         <Footer/>
         
       </BrowserRouter>

@@ -5,16 +5,21 @@ import Modal from '../../modal/Modal';
 import './login.css'
 
 
-export default function LoginPage() {
+export default function LoginPage(props) {
 
   const[show, setShow] = useState(false)
 
       const closeModal =() => setShow(false)
+
+
+      const handleLoginSubmit =()=>{
+        props.history.push('/dashboard')
+      }
     
     return (
             <div className='login-container' >
                 
-                    <form>
+                    <form onSubmit={handleLoginSubmit} >
                       <ul className='form-container' >
                          <li>
                           <label htmlFor="email" >Email</label>
