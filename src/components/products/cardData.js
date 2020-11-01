@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
             <Link className='cards__item__link' to={props.path} >
                 <figure className='card__item__pic-wrap' data-category={props.label} >
                     <img src={props.src}
-                     alt='Intelligence' 
+                     alt='Chart' 
                     className='cards__item__img' />
                 </figure>
                 <div className='cards__item__info' >
