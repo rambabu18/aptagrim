@@ -1,0 +1,70 @@
+.chart-container{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+
+.chart-form{
+    display: flex;
+    height: 50%;
+    width: 60%;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    padding: 2rem;
+    border: .1rem solid black;
+    background-color: lightgray;
+}
+.chart-form ul{
+    margin-top:3rem ;
+    padding:1rem ;
+    font-style: italic;
+    font-weight: 500;
+}
+
+ .chart-form li{
+     padding: 1rem ;
+     align-self: center;
+     align-items: center;
+     list-style-type: none;
+
+}
+
+select{
+    width: 600px;
+    height: 40px;
+    font-size: 1rem;
+    align-content: center;
+    border-radius: .5rem;
+}
+
+.button-chart-create{
+   margin-top: 2rem;
+   margin-left: 1.8rem;
+    border-radius: .5rem;
+    border: white ;
+    background-color: lightsalmon ;
+    font-size: 1.3rem;
+    font-weight: bolder;
+     width: 12rem;
+     height: 40px;
+}
+
+.button-chart-create:hover{
+    border: .2rem solid lightgrey;
+}
+
+.button-chart-select{
+    width: 200px;
+    height: 40px;
+    font-size: 1rem;
+    align-content: center;
+    border-radius: .5rem;
+    font-size: 1.3rem;
+}
+
+.button-chart-select:hover{
+    border: .2rem solid lightgrey;
+}
+
+

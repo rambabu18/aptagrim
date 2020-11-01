@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { Grid, } from '@material-ui/core';
 import Controls from "../../controls/Controls";
 import { useForm, Form } from '../../useForm';
@@ -35,13 +35,13 @@ export default function EmployeeForm(props) {
         if ('mobile' in fieldValues)
             temp.mobile = fieldValues.mobile.length > 9 ? "" : "Minimum 10 numbers required."
         if ('departmentId' in fieldValues)
-            temp.departmentId = fieldValues.departmentId.length != 0 ? "" : "This field is required."
+            temp.departmentId = fieldValues.departmentId.length !== 0 ? "" : "This field is required."
         setErrors({
             ...temp
         })
 
-        if (fieldValues == values)
-            return Object.values(temp).every(x => x == "")
+        if (fieldValues === values)
+            return Object.values(temp).every(x => x === "")
     }
 
     const {

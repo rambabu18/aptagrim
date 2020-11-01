@@ -13,6 +13,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import Notification from "../../Notification";
 import ConfirmDialog from "../../ConfirmDialog";
 
+
 const useStyles = makeStyles(theme => ({
     pageContent: {
         margin: theme.spacing(5),
@@ -37,7 +38,7 @@ const headCells = [
     { id: 'actions', label: 'Actions', disableSorting: true }
 ]
 
-export default function DashBoard() {
+export default function DashBoard(props) {
 
     const classes = useStyles();
     const [recordForEdit, setRecordForEdit] = useState(null)
@@ -58,7 +59,7 @@ export default function DashBoard() {
         let target = e.target;
         setFilterFn({
             fn: items => {
-                if (target.value == "")
+                if (target.value === "")
                     return items;
                 else
                     return items.filter(x => x.fullName.toLowerCase().includes(target.value))
@@ -67,7 +68,7 @@ export default function DashBoard() {
     }
 
     const addOrEdit = (employee, resetForm) => {
-        if (employee.id == 0)
+        if (employee.id === 0)
             employeeService.insertEmployee(employee)
         else
             employeeService.updateEmployee(employee)
@@ -126,7 +127,7 @@ export default function DashBoard() {
                         variant="outlined"
                         startIcon={<AddIcon />}
                         className={classes.newButton}
-                        onClick={() => { setOpenPopup(true); setRecordForEdit(null); }}
+                        onClick={()=>{props.history.push('/chart')}}
                     />
                 </Toolbar>
                 <TblContainer>
@@ -174,6 +175,7 @@ export default function DashBoard() {
                     recordForEdit={recordForEdit}
                     addOrEdit={addOrEdit} />
             </Popup>
+
             <Notification
                 notify={notify}
                 setNotify={setNotify}

@@ -11,8 +11,8 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "focus-trap-react": "^8.1.0",
     "date-fns": "^2.14.0",
+    "focus-trap-react": "^8.1.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-icons": "^3.11.0",
@@ -20,6 +20,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "react-scroll": "^1.8.1",
+    "recharts": "^1.8.5",
     "styled-components": "^5.2.0"
   },
   "scripts": {
